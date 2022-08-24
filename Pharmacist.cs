@@ -16,5 +16,24 @@ namespace PharmacyManagement
         {
             InitializeComponent();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form fM = new Form();
+            fM.Show();
+            this.Hide();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            uC_P_Dashboard1.Visible = true;
+            uC_P_Dashboard1.BringToFront();
+        }
+
+        private void Pharmacist_Load(object sender, EventArgs e)
+        {
+            uC_P_Dashboard1.Visible = false;
+           
+        }
     }
 }

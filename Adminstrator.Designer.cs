@@ -41,14 +41,14 @@ namespace PharmacyManagement
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_Profile1 = new PharmacyManagement.AdminstratorUC.UC_Profile();
+            this.uC_ViewUsers1 = new PharmacyManagement.AdminstratorUC.UC_ViewUsers();
+            this.uC_AddUser1 = new PharmacyManagement.AdminstratorUC.UC_AddUser();
+            this.uC_Dashboard1 = new PharmacyManagement.AdminstratorUC.UC_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_ViewUsers1 = new PharmacyManagement.AdminstratorUC.UC_ViewUsers();
-            this.uC_AddUser1 = new PharmacyManagement.AdminstratorUC.UC_AddUser();
-            this.uC_Dashboard1 = new PharmacyManagement.AdminstratorUC.UC_Dashboard();
-            this.uC_Profile1 = new PharmacyManagement.AdminstratorUC.UC_Profile();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -225,21 +225,14 @@ namespace PharmacyManagement
             this.panel2.Size = new System.Drawing.Size(1103, 770);
             this.panel2.TabIndex = 0;
             // 
-            // guna2Elipse1
+            // uC_Profile1
             // 
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.TargetControl = this.panel2;
+            this.uC_Profile1.BackColor = System.Drawing.Color.White;
+            this.uC_Profile1.ForeColor = System.Drawing.Color.Black;
+            this.uC_Profile1.Location = new System.Drawing.Point(-1, 0);
+            this.uC_Profile1.Name = "uC_Profile1";
+            this.uC_Profile1.Size = new System.Drawing.Size(1104, 770);
+            this.uC_Profile1.TabIndex = 8;
             // 
             // uC_ViewUsers1
             // 
@@ -265,20 +258,28 @@ namespace PharmacyManagement
             this.uC_Dashboard1.Size = new System.Drawing.Size(1103, 770);
             this.uC_Dashboard1.TabIndex = 0;
             // 
-            // uC_Profile1
+            // guna2Elipse1
             // 
-            this.uC_Profile1.BackColor = System.Drawing.Color.White;
-            this.uC_Profile1.Location = new System.Drawing.Point(-1, 0);
-            this.uC_Profile1.Name = "uC_Profile1";
-            this.uC_Profile1.Size = new System.Drawing.Size(1104, 770);
-            this.uC_Profile1.TabIndex = 8;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
             // 
             // Adminstrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1380, 768);
+            this.ClientSize = new System.Drawing.Size(1380, 780);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
