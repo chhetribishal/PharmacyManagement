@@ -19,7 +19,7 @@ namespace PharmacyManagement
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Form fM = new Form();
+            Form1 fM = new Form1();
             fM.Show();
             this.Hide();
         }
@@ -33,7 +33,13 @@ namespace PharmacyManagement
         private void Pharmacist_Load(object sender, EventArgs e)
         {
             uC_P_Dashboard1.Visible = false;
-           
+            uC_P_AddMedicine1.Visible = false;
+            btnDashboard.PerformClick();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
