@@ -37,8 +37,12 @@ namespace PharmacyManagement
             btnDashboard.PerformClick();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
+            uC_P_AddMedicine1.BringToFront();
+            uC_P_AddMedicine1.Visible = true;
+            
+         
 
         }
     }

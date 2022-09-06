@@ -37,15 +37,15 @@ namespace PharmacyManagement
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaButton2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_P_AddMedicine1 = new PharmacyManagement.PharmacistUC.UC_P_AddMedicine();
+            this.uC_P_Dashboard1 = new PharmacyManagement.PharmacistUC.UC_P_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_P_Dashboard1 = new PharmacyManagement.PharmacistUC.UC_P_Dashboard();
-            this.uC_P_AddMedicine1 = new PharmacyManagement.PharmacistUC.UC_P_AddMedicine();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btnAddMedicine = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button = new Guna.UI2.WinForms.Guna2Button();
@@ -63,7 +63,7 @@ namespace PharmacyManagement
             this.panel1.Controls.Add(this.guna2Button5);
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.gunaButton2);
+            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -174,26 +174,26 @@ namespace PharmacyManagement
             this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "View Medicine";
             // 
-            // gunaButton2
+            // btnAdd
             // 
-            this.gunaButton2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.gunaButton2.CheckedState.FillColor = System.Drawing.Color.White;
-            this.gunaButton2.CheckedState.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton2.CheckedState.Parent = this.gunaButton2;
-            this.gunaButton2.CustomImages.Parent = this.gunaButton2;
-            this.gunaButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
-            this.gunaButton2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.gunaButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaButton2.HoverState.Parent = this.gunaButton2;
-            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
-            this.gunaButton2.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton2.Location = new System.Drawing.Point(56, 346);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.ShadowDecoration.Parent = this.gunaButton2;
-            this.gunaButton2.Size = new System.Drawing.Size(263, 45);
-            this.gunaButton2.TabIndex = 2;
-            this.gunaButton2.Text = "Add Medicine";
-            this.gunaButton2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnAdd.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnAdd.CheckedState.FillColor = System.Drawing.Color.White;
+            this.btnAdd.CheckedState.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.CheckedState.Parent = this.btnAdd;
+            this.btnAdd.CustomImages.Parent = this.btnAdd;
+            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.HoverState.Parent = this.btnAdd;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAdd.Location = new System.Drawing.Point(56, 346);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
+            this.btnAdd.Size = new System.Drawing.Size(263, 45);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Add Medicine";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDashboard
             // 
@@ -247,13 +247,13 @@ namespace PharmacyManagement
             this.panel2.Size = new System.Drawing.Size(1153, 841);
             this.panel2.TabIndex = 1;
             // 
-            // guna2Elipse1
+            // uC_P_AddMedicine1
             // 
-            this.guna2Elipse1.TargetControl = this.panel2;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.TargetControl = this.panel2;
+            this.uC_P_AddMedicine1.BackColor = System.Drawing.Color.White;
+            this.uC_P_AddMedicine1.Location = new System.Drawing.Point(-3, 0);
+            this.uC_P_AddMedicine1.Name = "uC_P_AddMedicine1";
+            this.uC_P_AddMedicine1.Size = new System.Drawing.Size(1153, 841);
+            this.uC_P_AddMedicine1.TabIndex = 2;
             // 
             // uC_P_Dashboard1
             // 
@@ -264,13 +264,13 @@ namespace PharmacyManagement
             this.uC_P_Dashboard1.Size = new System.Drawing.Size(1153, 841);
             this.uC_P_Dashboard1.TabIndex = 0;
             // 
-            // uC_P_AddMedicine1
+            // guna2Elipse1
             // 
-            this.uC_P_AddMedicine1.BackColor = System.Drawing.Color.White;
-            this.uC_P_AddMedicine1.Location = new System.Drawing.Point(-3, 0);
-            this.uC_P_AddMedicine1.Name = "uC_P_AddMedicine1";
-            this.uC_P_AddMedicine1.Size = new System.Drawing.Size(1153, 841);
-            this.uC_P_AddMedicine1.TabIndex = 2;
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
             // 
             // guna2Button2
             // 
@@ -291,7 +291,6 @@ namespace PharmacyManagement
             this.guna2Button2.Size = new System.Drawing.Size(263, 45);
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "Add Medicine";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // btnAddMedicine
             // 
@@ -312,7 +311,6 @@ namespace PharmacyManagement
             this.btnAddMedicine.Size = new System.Drawing.Size(263, 45);
             this.btnAddMedicine.TabIndex = 2;
             this.btnAddMedicine.Text = "Add Medicine";
-            this.btnAddMedicine.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button
             // 
@@ -333,7 +331,6 @@ namespace PharmacyManagement
             this.guna2Button.Size = new System.Drawing.Size(263, 45);
             this.guna2Button.TabIndex = 2;
             this.guna2Button.Text = "Add Medicine";
-            this.guna2Button.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // gunaButton3
             // 
@@ -354,7 +351,6 @@ namespace PharmacyManagement
             this.gunaButton3.Size = new System.Drawing.Size(263, 45);
             this.gunaButton3.TabIndex = 2;
             this.gunaButton3.Text = "Add Medicine";
-            this.gunaButton3.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // Pharmacist
             // 
@@ -387,7 +383,7 @@ namespace PharmacyManagement
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button gunaButton2;
+        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Button btnDashboard;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private PharmacistUC.UC_P_Dashboard uC_P_Dashboard1;
